@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496980282C41799900090254 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496980272C41799900090254 /* ChatView.swift */; };
+		4969802A2C4179F300090254 /* ChatVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496980292C4179F300090254 /* ChatVM.swift */; };
+		4969802C2C46DADD00090254 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969802B2C46DADD00090254 /* PhotoView.swift */; };
+		4999917F2C21BCF800C09D68 /* KeyChatMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999917E2C21BCF800C09D68 /* KeyChatMacApp.swift */; };
+		499991832C21BCFA00C09D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499991822C21BCFA00C09D68 /* Assets.xcassets */; };
+		499991862C21BCFA00C09D68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499991852C21BCFA00C09D68 /* Preview Assets.xcassets */; };
+		499991912C21BCFA00C09D68 /* KeyChatMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499991902C21BCFA00C09D68 /* KeyChatMacTests.swift */; };
+		4999919B2C21BCFA00C09D68 /* KeyChatMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999919A2C21BCFA00C09D68 /* KeyChatMacUITests.swift */; };
+		4999919D2C21BCFA00C09D68 /* KeyChatMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999919C2C21BCFA00C09D68 /* KeyChatMacUITestsLaunchTests.swift */; };
+		49E94D032C285F910064076F /* Blur.metal in Sources */ = {isa = PBXBuildFile; fileRef = 49E94D022C285F910064076F /* Blur.metal */; };
+		49E94D052C2864E30064076F /* FilterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E94D042C2864E30064076F /* FilterVM.swift */; };
+		49E94D082C2D86FA0064076F /* ChatClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49E94D072C2D86FA0064076F /* ChatClient.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4999918D2C21BCFA00C09D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499991732C21BCF700C09D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4999917A2C21BCF800C09D68;
+			remoteInfo = KeyChatMac;
+		};
+		499991972C21BCFA00C09D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 499991732C21BCF700C09D68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4999917A2C21BCF800C09D68;
+			remoteInfo = KeyChatMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		496980272C41799900090254 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		496980292C4179F300090254 /* ChatVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVM.swift; sourceTree = "<group>"; };
+		4969802B2C46DADD00090254 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		4999917B2C21BCF800C09D68 /* KeyChatMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChatMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4999917E2C21BCF800C09D68 /* KeyChatMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChatMacApp.swift; sourceTree = "<group>"; };
+		499991822C21BCFA00C09D68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499991852C21BCFA00C09D68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		499991872C21BCFA00C09D68 /* KeyChatMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyChatMac.entitlements; sourceTree = "<group>"; };
+		4999918C2C21BCFA00C09D68 /* KeyChatMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChatMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		499991902C21BCFA00C09D68 /* KeyChatMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChatMacTests.swift; sourceTree = "<group>"; };
+		499991962C21BCFA00C09D68 /* KeyChatMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChatMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4999919A2C21BCFA00C09D68 /* KeyChatMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChatMacUITests.swift; sourceTree = "<group>"; };
+		4999919C2C21BCFA00C09D68 /* KeyChatMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChatMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49E94D022C285F910064076F /* Blur.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Blur.metal; sourceTree = "<group>"; };
+		49E94D042C2864E30064076F /* FilterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVM.swift; sourceTree = "<group>"; };
+		49E94D062C2D86ED0064076F /* ChatClient.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatClient.hpp; sourceTree = "<group>"; };
+		49E94D072C2D86FA0064076F /* ChatClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChatClient.cpp; sourceTree = "<group>"; };
+		49E94D0E2C2D88110064076F /* KeyChatMac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyChatMac-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499991782C21BCF800C09D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499991892C21BCFA00C09D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499991932C21BCFA00C09D68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		499991722C21BCF700C09D68 = {
+			isa = PBXGroup;
+			children = (
+				4999917D2C21BCF800C09D68 /* KeyChatMac */,
+				4999918F2C21BCFA00C09D68 /* KeyChatMacTests */,
+				499991992C21BCFA00C09D68 /* KeyChatMacUITests */,
+				4999917C2C21BCF800C09D68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4999917C2C21BCF800C09D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4999917B2C21BCF800C09D68 /* KeyChatMac.app */,
+				4999918C2C21BCFA00C09D68 /* KeyChatMacTests.xctest */,
+				499991962C21BCFA00C09D68 /* KeyChatMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4999917D2C21BCF800C09D68 /* KeyChatMac */ = {
+			isa = PBXGroup;
+			children = (
+				4999917E2C21BCF800C09D68 /* KeyChatMacApp.swift */,
+				496980272C41799900090254 /* ChatView.swift */,
+				496980292C4179F300090254 /* ChatVM.swift */,
+				4969802B2C46DADD00090254 /* PhotoView.swift */,
+				49E94D042C2864E30064076F /* FilterVM.swift */,
+				49E94D022C285F910064076F /* Blur.metal */,
+				49E94D0E2C2D88110064076F /* KeyChatMac-Bridging-Header.h */,
+				49E94D062C2D86ED0064076F /* ChatClient.hpp */,
+				49E94D072C2D86FA0064076F /* ChatClient.cpp */,
+				499991822C21BCFA00C09D68 /* Assets.xcassets */,
+				499991872C21BCFA00C09D68 /* KeyChatMac.entitlements */,
+				499991842C21BCFA00C09D68 /* Preview Content */,
+			);
+			path = KeyChatMac;
+			sourceTree = "<group>";
+		};
+		499991842C21BCFA00C09D68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				499991852C21BCFA00C09D68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4999918F2C21BCFA00C09D68 /* KeyChatMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				499991902C21BCFA00C09D68 /* KeyChatMacTests.swift */,
+			);
+			path = KeyChatMacTests;
+			sourceTree = "<group>";
+		};
+		499991992C21BCFA00C09D68 /* KeyChatMacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4999919A2C21BCFA00C09D68 /* KeyChatMacUITests.swift */,
+				4999919C2C21BCFA00C09D68 /* KeyChatMacUITestsLaunchTests.swift */,
+			);
+			path = KeyChatMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4999917A2C21BCF800C09D68 /* KeyChatMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499991A02C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMac" */;
+			buildPhases = (
+				499991772C21BCF800C09D68 /* Sources */,
+				499991782C21BCF800C09D68 /* Frameworks */,
+				499991792C21BCF800C09D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyChatMac;
+			productName = KeyChatMac;
+			productReference = 4999917B2C21BCF800C09D68 /* KeyChatMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4999918B2C21BCFA00C09D68 /* KeyChatMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499991A32C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMacTests" */;
+			buildPhases = (
+				499991882C21BCFA00C09D68 /* Sources */,
+				499991892C21BCFA00C09D68 /* Frameworks */,
+				4999918A2C21BCFA00C09D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4999918E2C21BCFA00C09D68 /* PBXTargetDependency */,
+			);
+			name = KeyChatMacTests;
+			productName = KeyChatMacTests;
+			productReference = 4999918C2C21BCFA00C09D68 /* KeyChatMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		499991952C21BCFA00C09D68 /* KeyChatMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499991A62C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMacUITests" */;
+			buildPhases = (
+				499991922C21BCFA00C09D68 /* Sources */,
+				499991932C21BCFA00C09D68 /* Frameworks */,
+				499991942C21BCFA00C09D68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499991982C21BCFA00C09D68 /* PBXTargetDependency */,
+			);
+			name = KeyChatMacUITests;
+			productName = KeyChatMacUITests;
+			productReference = 499991962C21BCFA00C09D68 /* KeyChatMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		499991732C21BCF700C09D68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4999917A2C21BCF800C09D68 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					4999918B2C21BCFA00C09D68 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4999917A2C21BCF800C09D68;
+					};
+					499991952C21BCFA00C09D68 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4999917A2C21BCF800C09D68;
+					};
+				};
+			};
+			buildConfigurationList = 499991762C21BCF700C09D68 /* Build configuration list for PBXProject "KeyChatMac" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 499991722C21BCF700C09D68;
+			productRefGroup = 4999917C2C21BCF800C09D68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4999917A2C21BCF800C09D68 /* KeyChatMac */,
+				4999918B2C21BCFA00C09D68 /* KeyChatMacTests */,
+				499991952C21BCFA00C09D68 /* KeyChatMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499991792C21BCF800C09D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499991862C21BCFA00C09D68 /* Preview Assets.xcassets in Resources */,
+				499991832C21BCFA00C09D68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4999918A2C21BCFA00C09D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499991942C21BCFA00C09D68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499991772C21BCF800C09D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E94D082C2D86FA0064076F /* ChatClient.cpp in Sources */,
+				4969802A2C4179F300090254 /* ChatVM.swift in Sources */,
+				4969802C2C46DADD00090254 /* PhotoView.swift in Sources */,
+				496980282C41799900090254 /* ChatView.swift in Sources */,
+				49E94D032C285F910064076F /* Blur.metal in Sources */,
+				49E94D052C2864E30064076F /* FilterVM.swift in Sources */,
+				4999917F2C21BCF800C09D68 /* KeyChatMacApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499991882C21BCFA00C09D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499991912C21BCFA00C09D68 /* KeyChatMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499991922C21BCFA00C09D68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4999919D2C21BCFA00C09D68 /* KeyChatMacUITestsLaunchTests.swift in Sources */,
+				4999919B2C21BCFA00C09D68 /* KeyChatMacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4999918E2C21BCFA00C09D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4999917A2C21BCF800C09D68 /* KeyChatMac */;
+			targetProxy = 4999918D2C21BCFA00C09D68 /* PBXContainerItemProxy */;
+		};
+		499991982C21BCFA00C09D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4999917A2C21BCF800C09D68 /* KeyChatMac */;
+			targetProxy = 499991972C21BCFA00C09D68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4999919E2C21BCFA00C09D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyChatMac/KeyChatMac-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4999919F2C21BCFA00C09D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "KeyChatMac/KeyChatMac-Bridging-Header.h";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+			};
+			name = Release;
+		};
+		499991A12C21BCFA00C09D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyChatMac/KeyChatMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyChatMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChat.KeyChatMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		499991A22C21BCFA00C09D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyChatMac/KeyChatMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyChatMac/Preview Content\"";
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChat.KeyChatMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		499991A42C21BCFA00C09D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChatMac.KeyChatMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyChatMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeyChatMac";
+			};
+			name = Debug;
+		};
+		499991A52C21BCFA00C09D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChatMac.KeyChatMacTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyChatMac.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeyChatMac";
+			};
+			name = Release;
+		};
+		499991A72C21BCFA00C09D68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChatMac.KeyChatMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeyChatMac;
+			};
+			name = Debug;
+		};
+		499991A82C21BCFA00C09D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43UNBQF5Z9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KeyChatMac.KeyChatMacUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeyChatMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499991762C21BCF700C09D68 /* Build configuration list for PBXProject "KeyChatMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4999919E2C21BCFA00C09D68 /* Debug */,
+				4999919F2C21BCFA00C09D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499991A02C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499991A12C21BCFA00C09D68 /* Debug */,
+				499991A22C21BCFA00C09D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499991A32C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499991A42C21BCFA00C09D68 /* Debug */,
+				499991A52C21BCFA00C09D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499991A62C21BCFA00C09D68 /* Build configuration list for PBXNativeTarget "KeyChatMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499991A72C21BCFA00C09D68 /* Debug */,
+				499991A82C21BCFA00C09D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 499991732C21BCF700C09D68 /* Project object */;
+}
