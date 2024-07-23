@@ -2,7 +2,7 @@
 
 This repo contains a Mac chat app with a C++ client and a C++ server.
 
-[Demo](./KeyChat720.mov)
+[Demo](https://youtu.be/RJHCMF3_SBc)
 
 ## KeyChatMac
 
