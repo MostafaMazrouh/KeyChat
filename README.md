@@ -2,10 +2,9 @@
 
 This repo contains a Mac chat app with a C++ client and a C++ server.
 
-## Video Demo
+## Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RJHCMF3_SBc?si=k-dPWsJZ2qiKnjJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+[![Demo](https://img.youtube.com/vi/RJHCMF3_SBc/0.jpg)](https://www.youtube.com/watch?v=RJHCMF3_SBc)
 
 ## KeyChatMac
 
